@@ -22,6 +22,22 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <h1>GA4 + GTM подключены</h1>
+<button onclick="dataLayer.push({
+  event: 'purchase',
+  ecommerce: {
+    transaction_id: 'T12345',
+    value: 199.99,
+    currency: 'EUR',
+    items: [{
+      item_id: 'sku123',
+      item_name: 'Товар X',
+      quantity: 1,
+      price: 199.99
+    }]
+  }
+})">
+  Купить
+</button>
 
   <!-- Тестовая кнопка события custom_click -->
   <button onclick="dataLayer.push({event:'custom_click'});">
